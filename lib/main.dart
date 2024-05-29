@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ngdemo24/presentation/pages/home_page.dart';
 
-void main() {
+import 'core/services/root_service.dart';
+
+void main() async{
+  await RootService.init();
+
   runApp(const MyApp());
 }
 

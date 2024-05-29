@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  RandomUsersUseCase randomUsersUseCase = RandomUsersUseCase(RandomUsersRepositoryImpl());
+  RandomUsersUseCase randomUsersUseCase = RandomUsersUseCase();
 
   ScrollController scrollController = ScrollController();
   bool isLoading = true;
